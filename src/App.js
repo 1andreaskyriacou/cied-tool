@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from './components/ui/card';
 import { Alert, AlertDescription } from './components/ui/alert';
-import { CheckCircle2, AlertTriangle, Info, Copyright } from 'lucide-react';
+import { CheckCircle2, AlertTriangle, Info} from 'lucide-react';
 
 /*
  * CIED Upgrade/Downgrade Decision Support Tool
@@ -313,7 +313,7 @@ const CIEDTool = () => {
     const lvef = parseFloat(upgrade.lvef) || 0;
     const rvPacing = parseFloat(upgrade.rvPacing) || 0;
     const age = parseFloat(upgrade.age) || 0;
-    const hfAdmit = parseFloat(upgrade.hfAdmissions) || 0;
+    
     
     // INFECTION RISK CALCULATION
     // Evidence: De novo PM/ICD 0.5-1.5%, CRT 1.5-2.5%; Upgrades 3-5%
